@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ===== SEO: lo que ve Google y las vistas previas al compartir el enlace ===== -->
+  <title>Yefferson Miranda · Desarrollador de IA y software · Puno, Perú</title>
+  <meta name="description" content="Desarrollador de inteligencia artificial y software desde Puno, Perú. Modelos predictivos, visión computacional, bots con IA generativa y aplicaciones web a medida.">
+  <meta name="author" content="Yefferson Miranda Josec">
+  <meta name="theme-color" content="#0d2b3a">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Yefferson Miranda · Desarrollador de IA y software">
+  <meta property="og:description" content="Llevo modelos de inteligencia artificial a sistemas reales, desde Puno, Perú.">
+  <meta property="og:locale" content="es_PE">
+
+  <!-- Ícono de la pestaña (SVG incrustado, no necesitas archivo) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230d2b3a'/%3E%3Ctext x='32' y='43' font-family='Arial' font-weight='800' font-size='30' text-anchor='middle' fill='%23e0a526'%3EYM%3C/text%3E%3C/svg%3E">
+
+  <!-- Tipografías: Bricolage Grotesque (títulos) + IBM Plex Sans (texto) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Datos estructurados para buscadores (opcional, ayuda al posicionamiento) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Yefferson Miranda Josec",
+    "jobTitle": "Desarrollador de inteligencia artificial y software",
+    "address": { "@type": "PostalAddress", "addressLocality": "Puno", "addressCountry": "PE" },
+    "alumniOf": "Universidad Nacional del Altiplano",
+    "sameAs": ["https://github.com/YEFFERSON1234"]
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- =====================================================================
+       HERO: nombre, propuesta y botones. Las curvas de nivel (SVG) las dibuja
+       js/main.js; el texto sale de js/data.js (SITE).
+       ===================================================================== -->
+  <header class="hero" id="inicio">
+    <svg class="hero__contours" id="contours" viewBox="0 0 1200 760"
+         preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"></svg>
+
+    <div class="wrap">
+      <nav class="nav" aria-label="Principal">
+        <a class="nav__brand" href="#inicio" aria-label="Inicio">YM</a>
+        <ul class="nav__list">
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#freelance">Freelance</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="hero__body">
+        <p class="hero__place" id="hero-place"></p>
+        <h1 class="hero__name" id="hero-name">Yefferson Miranda</h1>
+        <p class="hero__role" id="hero-role"></p>
+        <p class="hero__lead" id="hero-lead"></p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#proyectos">Ver proyectos</a>
+          <a class="btn btn--ghost" id="cv-link" href="#" download>Descargar CV</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- ===== SOBRE MÍ ===== -->
+    <section class="section" id="sobre-mi" aria-labelledby="t-sobre">
+      <div class="wrap section__grid">
+        <h2 id="t-sobre">Sobre mí</h2>
+        <div class="prose" id="about-text"></div>
+      </div>
+    </section>
+
+    <!-- ===== PROYECTOS DE IA E INVESTIGACIÓN ===== -->
+    <section class="section" id="proyectos" aria-labelledby="t-proyectos">
+      <div class="wrap section__grid">
+        <div class="section__head">
+          <h2 id="t-proyectos">Proyectos de IA e investigación</h2>
+          <p>Modelos aplicados a problemas del Altiplano: agricultura, ganadería e inclusión.</p>
+        </div>
+        <div class="rows" id="research-list"></div>
+      </div>
+    </section>
+
+    <!-- ===== TRABAJO FREELANCE ===== -->
+    <section class="section" id="freelance" aria-labelledby="t-freelance">
+      <div class="wrap section__grid">
+        <div class="section__head">
+          <h2 id="t-freelance">Trabajo freelance</h2>
+          <p>Sistemas hechos a medida para clientes reales.</p>
+        </div>
+        <div class="rows" id="freelance-list"></div>
+      </div>
+    </section>
+
+    <!-- ===== HABILIDADES ===== -->
+    <section class="section" id="habilidades" aria-labelledby="t-habilidades">
+      <div class="wrap section__grid">
+        <h2 id="t-habilidades">Habilidades</h2>
+        <dl class="skills" id="skills-list"></dl>
+      </div>
+    </section>
+
+    <!-- ===== FORMACIÓN ===== -->
+    <section class="section" id="formacion" aria-labelledby="t-formacion">
+      <div class="wrap section__grid">
+        <h2 id="t-formacion">Formación</h2>
+        <ul class="edu" id="education-list"></ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- =====================================================================
+       CONTACTO (también es el pie de página)
+       ===================================================================== -->
+  <footer class="contact" id="contacto">
+    <div class="wrap">
+      <h2 id="contact-title"></h2>
+      <p class="contact__text" id="contact-text"></p>
+      <div class="contact__actions">
+        <a class="btn btn--primary" id="mail-link" href="#">Escribirme un correo</a>
+        <button class="btn btn--ghost" id="copy-mail" type="button">Copiar correo</button>
+        <span class="contact__status" id="copy-status" role="status" aria-live="polite"></span>
+      </div>
+      <ul class="contact__links" id="contact-links"></ul>
+      <p class="contact__legal" id="legal"></p>
+    </div>
+  </footer>
+
+  <noscript>
+    <p class="noscript">Esta página necesita JavaScript para mostrar el contenido.
+      Escríbeme a yefesonmiranda@gmail.com.</p>
+  </noscript>
+
+  <!-- Orden importante: primero los datos, luego la lógica -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
